@@ -1,0 +1,83 @@
+@media screen and (min-width: 480px){
+    body {
+      display: grid;
+      grid-template-areas:
+        'header header header header header header'
+        'info menu menu menu menu menu'
+        'info main main main section section'
+        'footer footer footer footer footer footer';
+      grid-gap: 0.6em;
+      background:url('https://c.pxhere.com/photos/32/b7/bj_rkliden_landscape_lapland_autumn_morning-922966.jpg!d');
+      background-color: rgb(116, 5, 101);      
+      padding: 0.75em;
+      font-size: 1.2em;
+
+          }
+          header, aside, article, nav, footer, section { border: 0.2em solid black;}
+          #yht{
+            color: rosybrown;
+            }  
+        }
+  /* määrittelee näytön koon mukaan näkymän. min-width kertoo minimileveyden jolla nämä */
+  /* asetukset toimii. Display kertoo, että tulee grid. Sitten määritellään alueet. */
+  /* Sitten värit ja paddingit jne. */
+
+
+  header { grid-area: header; }
+nav { grid-area: menu; }
+article { grid-area: main; }
+aside { grid-area: info; }
+footer { grid-area: footer; }
+section { grid-area: section; }
+
+header, nav, article, aside, section{
+  color: aliceblue;
+  text-align: center;
+  font-family: cursive;
+  }
+
+footer{
+  color: aliceblue;
+  text-align: center;
+  font-family: fantasy;
+}
+
+
+
+/*Gridin noottien ja kirjoitettujen tekstien fontti */
+
+h1 {
+            color: rgba(209, 147, 13, 0.671);
+    font-family: 'Lucida Console', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif, serif;
+}
+
+footer.h2 {
+          color: rgba(201, 108, 47, 0.671);
+          font-family: 'Lucida Console', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif, serif;
+}
+
+/* Pääotsikoiden fontin väri ja fontti ... header=nimi, nav = herkullista jne. */
+/* Article=Otsikon alla oleva ruutu, Aside=ylävasen ruutu, footer=yhteystied. */
+/* section=yhteydenotto */
+
+
+@media screen and (min-width: 320px) and (max-width: 480px){
+    body {
+      display: flex;
+      flex-direction: column;
+      background-color: rgb(186, 228, 35);
+      padding: 3px;
+      font-size: 10px;
+      }
+  
+    aside {
+      display: none;
+    }
+    header, aside, article, nav, footer, section { border: 0.2em solid black;}
+  }
+  
+  @media screen and (max-width: 320px){
+    body {
+      width: 320px;
+    }
+  }

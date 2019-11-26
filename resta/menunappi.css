@@ -1,0 +1,14 @@
+h1 {
+    color: rgba(214, 19, 84, 0.671);
+    font-family: 'Times New Roman', Times, serif;
+}
+div {
+    display: flex;
+        background-image: url("https://previews.123rf.com/images/panyajampatong/panyajampatong1310/panyajampatong131000119/22939697-deer-skin-texture.jpg");
+        background-color: #cccccc;
+        color: rgb(184, 221, 116);
+        font-weight: bold;
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 26px
+}
+
